@@ -11,3 +11,7 @@
 - Tested reset password feature - creating an email using [**MailSlurp**](https://www.mailslurp.com/) api - enterring said email whilst checking all possible errors that could be received, and finally sending the confirmation email to created email box.
 - Reading the confirmation email returns the desired url- edited using regex expressions.
 - Redirect to reset password using the given url and checking all errors on this page show and finally successfully changing the password.
+
+## Test Video
+https://user-images.githubusercontent.com/89572395/151049140-97525d63-8bf7-4340-8bd0-3fc83a6d7fbf.mp4
+
