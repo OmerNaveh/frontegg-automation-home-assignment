@@ -9,6 +9,7 @@ describe("login page testing with email", () => {
   });
 
   it("should error for email with wrong syntax", () => {
+    cy.wait(2000); // await full page render
     cy.get('[data-test-id="input-email"]').as("email").type("a.com{enter}");
     cy.get("@email").should("have.attr", "aria-invalid", "true");
     cy.get("@email").clear(); //clear text input
