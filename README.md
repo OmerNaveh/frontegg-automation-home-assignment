@@ -2,7 +2,7 @@
 
 ## Details
 
-- Installed Cypress and frontegg react preset
+- Installed Cypress and frontegg react preset 
 - Tested login using email and password - checking all fields and possible errors
 
 ### **Extra Testing**
