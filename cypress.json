@@ -1,1 +1,8 @@
-{ "baseUrl": "http://localhost:3000/account" }
+{
+  "baseUrl": "http://localhost:3000/account",
+  "defaultCommandTimeout": 30000,
+  "requestTimeout": 30000,
+  "env": {
+    "MAILSLURP_API_KEY": "8e2e56b162234282d3a0020aed0c3e9a7b6eccddde4ca2e0d20ede6a4c1bd5a5"
+  }
+}

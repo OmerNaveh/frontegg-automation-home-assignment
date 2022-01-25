@@ -41,6 +41,7 @@ describe("login page testing with email", () => {
     cy.get('[data-test-id="input-email"]').as("email").clear();
     cy.get("@email").type("mock@gmail.com{enter}");
     cy.get("@password").type("mockpass{enter}");
+    cy.wait(2000); //wait for page to redirect
     cy.url().should("eq", "http://localhost:3000/");
   });
 });
