@@ -114,7 +114,7 @@ describe("test reset password feature", () => {
       .within(() => {
         cy.get('[data-test-id="submit-btn"]').click();
       });
-    cy.wait(3000);
+    cy.wait(6000); //wait for full redirect
     cy.url().should("include", "/login");
   });
 });
