@@ -85,7 +85,7 @@ describe("test reset password feature", () => {
           "avoid 3 or more recurring characters"
         );
         cy.get("@password").focus().clear();
-        cy.get("@password").focus().type("abcabc");
+        cy.get("@password").focus().type("abcabcABC!@#");
         cy.get('input[name="confirmPassword"]').as("confirm").focus();
         cy.get("@confirm").focus().type("abc");
         cy.get('[data-test-id="repeat-password-box_error"]')
@@ -104,7 +104,7 @@ describe("test reset password feature", () => {
         cy.get('input[name="confirmPassword"]')
           .as("confirm")
           .focus()
-          .type("abcabc");
+          .type("abcabcABC!@#");
         cy.get("@submit").should("not.be.disabled");
       });
   });
